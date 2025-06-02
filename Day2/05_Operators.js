@@ -86,6 +86,104 @@ let num14=--num13;
 console.log(num13);//66
 console.log(num14);//66
 
+console.log("------------------------------");
+
+console.log(90/0);//Infinity
+console.log(-90/0);//-Infinity
+console.log("Hello"/0);//NaN Not a number
+console.log(0/0);//NAN
+
+console.log("-----isNaN()------");
+//isNAN(value): is that value is not a number
+console.log(isNaN(190));//false
+console.log(isNaN("Priyanka"));//true
+
+console.log("-------Relational operators--------");
+/*
+< <= > >=  !=
+TestData: a=101 b=51 num13 = num14 = 66 num11=134 num9=num10=46
+*/
+console.log("less than < : "+(b<num13));//true
+console.log("less than equal to <=: "+(num13<=num14));//true
+console.log(num11<=num14);//false
+console.log("greater than >: "+(a>b));//true
+console.log("greater than equal to >=: "+(num11>=num9));//true
+console.log("Not equal to != : "+(num13!=num14));//false
+console.log(num13!=num10);//true
+
+console.log("---------------------------");
+
+//Equality 1. strict equality === and 2.loose equality ==
+
+//loose : type converted and then it compares
+console.log(10=="10");//true
+console.log(10==10);//true
+console.log(null==undefined);//true
+
+
+//strict: origin type and value tested
+console.log(10==="10");//false
+console.log(10===10);//true
+
+console.log(null===undefined);//false
+
+//Logical operators
+/*
+c1      c2           (and)&&            ||(or)       !c1(not)
+true    true            true            true          false
+true    false           false           true           false
+false   true            false           true            true
+false   false           false           false           true
+*/
+
+
+console.log("----and && operator---");
+//TestData: a=101 b=51 num13 = num14 = 66 num11=134 num9=num10=46
+console.log((b<num13) && (num13==num14));//true
+console.log((a>b) && (num13>num11));//false
+console.log((num11<b) && (a>b));//false
+console.log((b>a) && (num13>num11));//false
+
+console.log("----or || operator---");
+
+console.log((b<num13) || (num13==num14));//true
+console.log((a>b) || (num13>num11));//true
+console.log((num11<b) || (a>b));//true
+console.log((b>a) || (num13>num11));//false
+
+
+console.log("----!(not)------");
+
+console.log(a>b);//true
+console.log(!(a>b));//false
+
+console.log(b>a);//false
+console.log(!(b>a));//true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

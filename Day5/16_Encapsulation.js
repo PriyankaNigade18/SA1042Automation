@@ -7,7 +7,7 @@ Purpose is: data hiding/data security
 real time: class,capsule
 
 how to implement:
-using scope we can hide the data
+using (local)scope we can hide the data
 using getters and setters we can provide access
 
 */

@@ -25,6 +25,12 @@ cy.get("tagname of element").click();
 
 3.Using cssSelector(Base strategy)
 ---------------------------
+what is CssSelector ?
+----------------------
+CssSelectors is locator strategy to locate webelements
+CssSelector travel in one direction that is parent node to child node
+CssSelector is faster than xpath
+
  1.tagname with id
  ------------------
   Syntax

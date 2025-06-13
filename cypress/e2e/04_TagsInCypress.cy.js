@@ -79,8 +79,9 @@ it("Test for crm app launch",()=>{
 describe.only("Sutie 2: Lanch application..",()=>{
 
 
-    it.skip("Test for tutorial open cart application",()=>{
-        cy.visit("https://tutorialsninja.com/demo/index.php?route=account/login")
+    it("Test for tutorial open cart application",()=>{
+       cy.visit("https://tutorialsninja.com/demo/index.php?route=account/login")
+        
     })
 
       it("Test for orange hrm application",()=>{

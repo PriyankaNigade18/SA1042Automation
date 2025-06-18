@@ -77,12 +77,14 @@ it("Test for CRM login and logout scenario",()=>{
 //open application
 cy.visit("https://automationplayground.com/crm/");
 
+cy.screenshot("HomePage");
 //automation for hyperlink signin-using cssselector-tagname with id
 //cy.get("a#SignIn").click();
 
 //automate Sigin with visible text:contains()
 //<a>Sign In</a>
 cy.contains("Sign In").click();
+cy.screenshot("SignInpage");
 
 //enter email into inputbox cyress use type():cssSelector using id
 cy.get("input#email-id").type("test@gmail.com");
@@ -123,6 +125,7 @@ cy.get("input#remember").check();
 
 //click on submit button using tagname(applicable for unique element)
 cy.get("button").click();
+cy.screenshot("CustomerPage");
 
 //assertion on next page url should contains:customers
 cy.url().should("include","customers");

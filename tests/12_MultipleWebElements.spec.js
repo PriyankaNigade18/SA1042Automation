@@ -30,5 +30,27 @@ await page.waitForTimeout(2000);
 
 })
 
+test.only("Test for list of links",async({page})=>{
 
+   
+await page.goto("https://tutorialsninja.com/demo/index.php?route=account/login");
+
+//total link
+let allLinks=await page.locator("//div[@class='list-group']//a").all();//13 elements/links
+console.log("Total links/options are: "+allLinks.length);
+
+for(let i of allLinks)
+{
+    console.log("Text is: "+await i.textContent());
+    console.log("Attribute href value is: "+await i.getAttribute("href"));
+    
+    
+}
+
+
+
+
+
+
+})
 

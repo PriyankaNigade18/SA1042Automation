@@ -34,6 +34,7 @@ export default defineConfig({
     screenshot:'on',
     video:'on'
   },
+  
 
   /* Configure projects for major browsers */
   projects: [
